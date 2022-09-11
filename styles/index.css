@@ -1,31 +1,8 @@
-.box {
-  font-size: 20px;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 300;
-  box-sizing: border-box;
-  width: 350px;
-  height: 100px;
-}
-
-.item {
-    font-size: 20px;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
-    box-sizing: border-box;
-    width: 350px;
-    height: 100px;
-  }
-
-  /* SQUARES AND INNERBOXES */
+/* SQUARES AND INNERBOXES */
 .box-1 {
     display: flex;
-    align-self: flex-end;
+    justify-content: flex-start;
+    align-items: flex-end;
     width: 468px;
     height: 160px;
     margin: 5px;
@@ -34,17 +11,17 @@
 }
 
 .innerbox-1 {
-    align-self: flex-end;
-    width: 78px;
+    min-width: 78px;
     height: 78px;
     margin: 20px;
     border-radius: 4px;
     background-color: #ffd500;
 }
 
+
 .box-2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 468px;
     height: 160px;
@@ -63,6 +40,7 @@
 .box-3 {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     width: 468px;
     height: 160px;
     margin: 5px;
@@ -80,8 +58,9 @@
 
 .box-4 {
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-self: center;
+    
     width: 468px;
     height: 160px;
     margin: 5px;
@@ -97,21 +76,69 @@
     background-color: #ffd500;
 }
 
+.innerbox-41 {
+    align-self: flex-end;
+    min-width: 78px;
+    height: 78px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #ffd500;
+}
+
 .box-5 {
     display: flex;
+    justify-content: center;
     width: 468px;
     height: 160px;
     margin: 5px;
     border-radius: 8px;
     background: #fa6800;
 }
+
+
+.innerbox-5 {
+    width: 78px;
+    height: 120px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #ffd500;
+}
+
+.innerbox-51 {
+    align-self: center;
+    width: 78px;
+    height: 64px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #ffd500;
+}
+
 .box-6 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 468px;
     height: 160px;
     margin: 5px;
     border-radius: 8px;
     background: #fa6800;
+}
+
+.innerbox-6 {   
+    width: 78px;
+    height: 78px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #ffd500;
+}
+
+.innerbox-61 {
+    flex-grow: 1;
+    width: 78px;
+    height: 78px;
+    border-radius: 4px;
+    margin: 20px;
+    background-color: #ffd500;
 }
 
 
@@ -120,33 +147,33 @@
     width: 273px;
     height: 220px;
     margin:20px;
-    background: #00aba9;
+    background: #aa003a;
 }
 .item-2 {
     width: 273px;
     height: 220px;
-
-    background: #1ba1e2;
+    margin: 20px;
+    background: #03004d;
 } 
 .item-3{
     width: 273px;
     height: 220px;
-    margin:20px;
-    background: #aa00ff;
+    margin: 20px;
+    background: #aa003a;
 }
 
 .item-4 {
     width: 273px;
     height: 220px;
     margin:20px;
-    background: #aa003a;
+    background: #03004d ;
 }
 
 .item-5 {
     width: 273px;
     height: 220px;
     margin:20px;
-    background: #1ba1e2;
+    background: #aa003a;
 }
 
 /* Titles */
